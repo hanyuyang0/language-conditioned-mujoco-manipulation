@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vla-sim"
+version = "0.1.0"
+description = "Low-VRAM language-conditioned manipulation in MuJoCo"
+requires-python = ">=3.10"
+dependencies = [
+  "gymnasium>=1.0",
+  "imageio>=2.34",
+  "imageio-ffmpeg>=0.5",
+  "mujoco>=3.2,<4",
+  "numpy>=1.26",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "tqdm>=4.66",
+]
+
+[tool.setuptools.packages.find]
+include = ["vla_sim*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

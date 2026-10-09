@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+.env
+.env.*
+archive/
+datasets/
+models/
+runs/
+outputs/
+MJMODEL.TXT
+MJDATA.TXT
